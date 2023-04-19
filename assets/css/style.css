@@ -188,6 +188,12 @@ color: #454545;
 }
 
 /* ////////////////////////////////applies/////////////////////// */
+.checkbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
 .applies-container , .slides-container{
     background: #FFFFFF;
 box-shadow: 5px 10px 30px -15px rgba(0, 0, 0, 0.1);
@@ -207,10 +213,12 @@ border-radius: 20px;
     color: #565A5C;
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
     align-items: center;
     flex-direction: column;
-    gap: 10px; 
+    padding-inline: 10px;
     padding-block: 20px;
     border-radius: 15px;
     font-size: 14px;
@@ -226,6 +234,10 @@ border-radius: 20px;
   
     color: #4A95E3;
   
+}
+
+.mySwiper-apply-footer .swiper-slide{
+  padding: 20px;
 }
 /* ////////////////////form//////////////// */
 .checkbox{
@@ -283,6 +295,7 @@ background-color: #F7C737;
 }
 .slides-title{
 font-size: 18px;
+font-weight: bold;
 }
 .slides-img img{
     top: -90px;
@@ -565,19 +578,23 @@ z-index: 2;
 
   /* ///////////// customers ////////////// */
 
-  .mySwiper-customers .swiper-slide{
-    max-width: 150px;
-    gap: 100px;
-
-  }
   .mySwiper-customers .swiper-wrapper{
   margin-bottom: 50px;
+
+  }
+  .mySwiper-customers .swiper-slide{
+    display: flex;
+    justify-content: center;
   }
   .mySwiper-customers .swiper-slide img{
-
+ 
     border-radius: 20px;
     filter: grayscale(1);
     background-color: white;
+  }
+
+  .mySwiper-customers .swiper-slide img:hover {
+filter: inherit;
   }
   .customers-title h5{
     font-weight: bold;
@@ -961,6 +978,14 @@ width: 100% ;
   margin: 0;
 
 }
+
+}
+/* /////////////////////////////////// */
+@media screen and (max-width: 768px) {
+  .mySwiper-customers .swiper-slide img{
+ 
+    width: 100px;
+    }
 }
 /* ////////////////////////////// */
 @media screen and (max-width: 991px) {
@@ -991,6 +1016,15 @@ margin-bottom: 20px;
   border-left: none;
   margin-bottom: 10px;
   border-bottom: #98C6F5 solid 1px;
+}
+.slides-text {
+  font-size: 12px;
+}
+.mini-navbar ul {
+font-size: 12px;
+}
+.card-title span {
+  font-size: 12px;
 }
 }
 /* ///////////////////////////////// */
